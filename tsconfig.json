@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "emitDeclarationOnly": false,
+    "jsx": "react-jsx",
+    "baseUrl": "."
+  },
+  "include": ["src"],
+  "exclude": [
+    "test",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "vitest.d.ts",
+    "node_modules",
+    "dist"
+  ]
+}
