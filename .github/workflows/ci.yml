@@ -16,6 +16,10 @@ jobs:
         with:
           node-version: '20'
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - run: pnpm install
       - run: pnpm build
       - run: pnpm test
