@@ -39,6 +39,9 @@ jobs:
           git tag v${{ env.VERSION }}
           git push origin v${{ env.VERSION }}
 
+      - name: Setup npm authentication
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Publish to npm
         run: pnpm publish --access public --no-git-checks
         env:
