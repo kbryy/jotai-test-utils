@@ -9,7 +9,7 @@
     "format": "biome format --write ./src",
     "lint": "biome lint --write ./src",
     "check": "biome check ./src",
-    "test": "vitest --coverage"
+    "test": "vitest run"
   },
   "keywords": ["jotai", "testing", "react", "test-utils"],
   "author": "kbryy",
