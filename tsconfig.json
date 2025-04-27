@@ -6,31 +6,32 @@
       "DOM.Iterable",
       "ESNext"
     ],
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "emitDeclarationOnly": false,
     "jsx": "react-jsx",
     "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "types": [
-      "vitest/globals",
-      "@testing-library/jest-dom"
-    ]
   },
   "include": [
-    "src",
-    "vitest.d.ts"
+    "src"
+  ],
+  "exclude": [
+    "test",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "vitest.d.ts",
+    "node_modules",
+    "dist"
   ]
 }

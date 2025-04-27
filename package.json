@@ -2,6 +2,26 @@
   "name": "jotai-test-utils",
   "version": "0.0.1",
   "description": "Jotai用のテストユーティリティ",
+  "keywords": ["jotai", "testing", "react", "test-utils"],
+  "author": "kbryy",
+  "license": "MIT",
+  "packageManager": "pnpm@10.9.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbryy/jotai-test-utils.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "homepage": "https://github.com/kbryy/jotai-test-utils#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -10,13 +30,6 @@
     "lint": "biome lint --write ./src",
     "check": "biome check ./src",
     "test": "vitest run"
-  },
-  "keywords": ["jotai", "testing", "react", "test-utils"],
-  "author": "kbryy",
-  "license": "MIT",
-  "packageManager": "pnpm@10.9.0",
-  "publishConfig": {
-    "access": "public"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
