@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "moduleResolution": "Node",
     "allowJs": false,
@@ -21,11 +17,9 @@
     "outDir": "dist",
     "emitDeclarationOnly": false,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "."
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "exclude": [
     "test",
     "**/*.test.ts",

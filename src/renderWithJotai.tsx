@@ -1,8 +1,8 @@
 import { render } from "@testing-library/react";
+import { RenderResult } from "@testing-library/react";
 import { Provider } from "jotai";
-import { createJotaiStore, type InitialValues } from ".";
-import type { RenderResult } from "@testing-library/react";
-import type { ReactElement } from "react";
+import { ReactElement } from "react";
+import { InitialValues, createJotaiStore } from ".";
 
 type RenderWithJotaiResult = RenderResult & {
   store: ReturnType<typeof createJotaiStore>;

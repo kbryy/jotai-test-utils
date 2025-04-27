@@ -1,5 +1,6 @@
 import { screen } from "@testing-library/react";
 import { atom, useAtom } from "jotai";
+import React from "react";
 import { renderWithJotai } from "./renderWithJotai";
 
 const countAtom = atom(0);
