@@ -10,12 +10,12 @@ const Display = () => {
   return <div>Count: {count}</div>;
 };
 
-test("renders default atom value", () => {
+test("初期値がレンダーされること", () => {
   renderWithJotai(<Display />);
   expect(screen.getByText("Count: 0")).toBeInTheDocument();
 });
 
-test("renders set atom value", () => {
+test("初期値を渡して値がレンダーされること", () => {
   renderWithJotai(<Display />, { initialValues: [[countAtom, 7]] });
   expect(screen.getByText("Count: 7")).toBeInTheDocument();
 });
